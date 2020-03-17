@@ -47,7 +47,7 @@ async def accion(ctx, stock):
 #evento anti gey
 @client.event
 async def on_message(message):
-    if message.content.find("gey") != -1 or message.content.find("gay") != -1:
+    if message.content.find("gey") != -1 or message.content.find("gay") != -1 or message.content.find("homo") != -1:
         await message.channel.send("No U")
     await client.process_commands(message)
 
