@@ -65,7 +65,7 @@ async def on_message(message):
         await message.channel.send("lol")
     await client.process_commands(message)
 
-
+#jodfjsodjfoj
 
 
 #fdklfsdlkf
