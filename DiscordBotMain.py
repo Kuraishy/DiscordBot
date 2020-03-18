@@ -25,9 +25,9 @@ client.remove_command('help')
 async def help(ctx):
     embed = discord.Embed(title="Titulo", description="descripcion descriptiva", color=0xeee657)
     embed.add_field(name="$test lol", value="Regresa lol", inline=False)
-    embed.add_field(name="$accion TICKER",value="Regresa el precio de **TICKER**")
-    embed.add_field(name="$perdedores", value="Regresa los top perdedores del dia")
-    embed.add_field(name="$ganadores", value="Regresa los top ganadores del dia")
+    embed.add_field(name="$accion TICKER",value="Regresa el precio de **TICKER**", inline=False)
+    embed.add_field(name="$perdedores", value="Regresa los top perdedores del dia", inline=False)
+    embed.add_field(name="$ganadores", value="Regresa los top ganadores del dia", inline=False)
     await ctx.send(embed=embed)
 
 @client.command()
