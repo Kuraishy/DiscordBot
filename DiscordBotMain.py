@@ -58,7 +58,22 @@ async def on_message(message):
         await message.channel.send("F")
     await client.process_commands(message)
 
+#sad
+@client.event
+async def on_message(message):
+    if message.content.find("lol") != -1:
+        await message.channel.send("lol")
+    await client.process_commands(message)
 
+
+#sad
+@client.event
+async def on_message(message):
+    if message.content.find("losdfsdfl") != -1:
+        await message.channel.send("losfdsfsl")
+    await client.process_commands(message)
+
+#fdklfsdlkf
 @client.event
 async def on_ready():
     print('CORRIENDO')
