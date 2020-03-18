@@ -49,45 +49,18 @@ async def accion(ctx, stock):
 async def on_message(message):
     if message.content.find("gey") != -1 or message.content.find("gay") != -1 or message.content.find("homo") != -1:
         await message.channel.send("No U")
-    await client.process_commands(message)
-
-#sad
-@client.event
-async def on_message(message):
-    if message.content.find("sad") != -1:
+    elif message.content.find("sad") != -1:
         await message.channel.send("F")
-    await client.process_commands(message)
-
-#sad
-@client.event
-async def on_message(message):
-    if message.content.find("lol") != -1:
+    elif message.content.find("lol") != -1:
         await message.channel.send("lol")
     await client.process_commands(message)
 
-#jodfjsodjfojsefdsf
 
 
-#fdklfsdlkf
+
+#sad
 @client.event
 async def on_ready():
     print('CORRIENDO')
 
-client.run('Njg5NDE5NjQ4MzY5Njg4NzY3.XnC3aQ.50hiX55CC7rJy1573c9ctb3SyUg')
-
-
-#
-#
-# @bot.command()
-# async def multiply(ctx, a: int, b: int):
-#     await ctx.send(a*b)
-#
-# @bot.command()
-# async def greet(ctx):
-#     await ctx.send(":smiley: :wave: Hello, there!")
-#
-# @bot.commands()
-# async def cat(ctx):
-#     await ctx.send("https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif")
-#
-# bot.run('Njg5NDE5NjQ4MzY5Njg4NzY3.XnC10A.8wyLE3XZ3UehHM0-4vlvvdfkJXY')
+client.run('Njg5NDE5NjQ4MzY5Njg4NzY3.XnF0hA.TtggGBgB9PbG_VFmlodybPjv3R8')
