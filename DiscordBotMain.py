@@ -26,14 +26,19 @@ async def help(ctx):
     embed = discord.Embed(title="Titulo", description="descripcion descriptiva", color=0xeee657)
     embed.add_field(name="$test lol", value="Regresa lol", inline=False)
     embed.add_field(name="$accion TICKER",value="Regresa el precio de **TICKER**")
+    embed.add_field(name="$perdedores", value="Regresa los top perdedores del dia")
+    embed.add_field(name="$ganadores", value="Regresa los top ganadores del dia")
     await ctx.send(embed=embed)
 
-
-#commandos
 @client.command()
-async def test(ctx, arg):
-    await ctx.send(arg)
+async  def perdedores(ctx):
+    await ctx.send("espera.. OwO")
+    await ctx.send(si.get_day_losers())
 
+@client.command()
+async  def ganadores(ctx):
+    await ctx.send("espera.. OwO")
+    await ctx.send(si.get_day_gainers())
 
 @client.command()
 async def accion(ctx, stock):
