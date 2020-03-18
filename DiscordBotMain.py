@@ -1,6 +1,7 @@
 import discord
 import yfinance as yf
 from yahoo_fin import stock_info as si
+import os
 
 #escribir en la consola pipreqs C:\Users\Administrador\PycharmProjects\DiscordBot para generar requirementgi
 
@@ -56,11 +57,11 @@ async def on_message(message):
     await client.process_commands(message)
 
 
-
+print(os.environ.get("BOT_TOKEN_UWU"))
 
 #sad
 @client.event
 async def on_ready():
     print('CORRIENDO')
 
-client.run('Njg5NDE5NjQ4MzY5Njg4NzY3.XnF4cg.jauFoKrxZ3jPHo2PhgncEK6eM-M')
+client.run(os.environ.get("BOT_TOKEN_UWU"))
