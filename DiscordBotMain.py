@@ -51,8 +51,8 @@ async def on_message(message):
         await message.channel.send("No U")
     elif message.content.find("sad") != -1:
         await message.channel.send("F")
-    elif message.content.find("lol") != -1:
-        await message.channel.send("lol")
+    if message.content.find('lol') != -1 and message.author.id != client.user.id:
+        await message.channel.send('lol')
     await client.process_commands(message)
 
 
@@ -63,4 +63,4 @@ async def on_message(message):
 async def on_ready():
     print('CORRIENDO')
 
-client.run('Njg5NDE5NjQ4MzY5Njg4NzY3.XnF0hA.TtggGBgB9PbG_VFmlodybPjv3R8')
+client.run('Njg5NDE5NjQ4MzY5Njg4NzY3.XnF4cg.jauFoKrxZ3jPHo2PhgncEK6eM-M')
