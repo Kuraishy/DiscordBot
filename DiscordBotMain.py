@@ -176,6 +176,6 @@ print(os.environ.get("BOT_TOKEN_UWU"))
 #sad
 @client.event
 async def on_ready():
-    print('CORRIENDO V2')
+    print('CORRIENDO V3')
     await client.change_presence(status=discord.Status.online, activity=discord.Game(os.environ.get("BOT_STATUS")))
 client.run(os.environ.get("BOT_TOKEN_UWU"))
