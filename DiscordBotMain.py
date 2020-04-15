@@ -155,7 +155,6 @@ async def accion(ctx, stock):
 #evento anti gey
 @client.event
 async def on_message(message):
-
     if message.content.lower().find("gey") != -1 or message.content.lower().find("gay") != -1 or message.content.lower().find("homo") != -1 or message.content.lower().find("homosexual") != -1 or message.content.lower().find("joto") != -1:
         if str(message.author.id)==os.environ.get("AQUA_ID"):
             await message.channel.send("SASUGA AQUASAMA")
@@ -169,7 +168,6 @@ async def on_message(message):
         await message.channel.send('gey')
     await client.process_commands(message)
 
-    await client.process_commands(message)
 
 
 
