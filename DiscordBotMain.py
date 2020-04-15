@@ -155,13 +155,22 @@ async def accion(ctx, stock):
 #evento anti gey
 @client.event
 async def on_message(message):
-    if message.content.find("gey") != -1 or message.content.find("gay") != -1 or message.content.find("homo") != -1:
-        await message.channel.send("No U")
+
+    if message.content.lower().find("gey") != -1 or message.content.lower().find("gay") != -1 or message.content.lower().find("homo") != -1 or message.content.lower().find("homosexual") != -1 or message.content.lower().find("joto") != -1:
+        if str(message.author.id)==os.environ.get("AQUA_ID"):
+            await message.channel.send("SASUGA AQUASAMA")
+        else:
+            await message.channel.send("No U")
     elif message.content.find("sad") != -1:
         await message.channel.send("F")
     if message.content.find('lol') != -1 and message.author.id != client.user.id:
         await message.channel.send('lol')
+    if message.content.find('pruebatest') != -1:
+        await message.channel.send('gey')
     await client.process_commands(message)
+
+    await client.process_commands(message)
+
 
 
 print(os.environ.get("BOT_TOKEN_UWU"))
